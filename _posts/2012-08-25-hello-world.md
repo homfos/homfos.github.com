@@ -7,13 +7,3 @@ title: 我的Blog
 ---
 ##前言
 很久前都有在github上创建自己的博客的想法，但总由于项目上的事情太忙而作罢。最近几天项目上的事情暂告一段落，所以就顺便整理一下博客。主要是试用github的博客功能，找找自己顺手的工具，为以后的博客更新做准备。
-
-{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}
