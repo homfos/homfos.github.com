@@ -1,3 +1,4 @@
+highlighter: rouge
 markdown: rdiscount
 paginate: 8
 permalink: /:title
