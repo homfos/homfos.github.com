@@ -1,6 +1,6 @@
 ---
 layout: default
-title: http
+title: Get和Post的区别
 ---
 
 #HTTP(超文本传输协议）

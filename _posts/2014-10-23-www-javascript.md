@@ -1,6 +1,6 @@
 ---
 layout: default
-title: homfos Blog
+title: JavaScript入门
 ---
 #javascript入门
 - javascript是脚本语言，被浏览器解析执行
