@@ -30,7 +30,7 @@ sudo service hudson start
 
 #SVN post hook配置
 在svn的工程目录下的hooks的目录中，通过post-commit.tmpl模板复制出一个post-commit，然后执行chmod a+x post-commit给其增加可执行权限。然后在post-commit末尾添加如下内容：
-
+<pre class="prettyprint" id="bash">
 /usr/bin/wget \
   --header "Content-Type:text/plain;charset=UTF-8" \
   --post-data "`svnlook changed --revision $REV $REPOS`" \
@@ -38,3 +38,4 @@ sudo service hudson start
   --timeout=2 \
 http://10.25.79.176:8080/job/equipment_maintain/build?token=cd
 
+</pre>
