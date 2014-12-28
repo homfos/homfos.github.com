@@ -39,3 +39,6 @@ sudo service hudson start
 http://10.25.79.176:8080/job/equipment_maintain/build?token=cd
 
 </pre>
+
+#Hudson自动Deploy配置
+通过界面http://10.25.79.176:8080/pluginManager/安装Deploy to container Plugin
