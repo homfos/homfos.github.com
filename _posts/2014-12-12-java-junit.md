@@ -101,3 +101,23 @@ public static void method()	This method is executed once, after all tests have b
 
 ##测试执行顺序
 JUnit不保证测试代码的执行顺序，编写测试代码不能对测试代码的执行顺序做任何假定
+
+#用ant执行junit测试
+- Put both junit.jar and ant-junit.jar in ANT_HOME/lib.
+- Do not put either in ANT_HOME/lib, and instead include their locations in your CLASSPATH environment variable.
+- Add both JARs to your classpath using -lib.
+- Specify the locations of both JARs using a <classpath> element in a <taskdef> in the build file.
+- Leave ant-junit.jar in its default location in ANT_HOME/lib but include junit.jar in the <classpath> passed to <junit>. (since Ant 1.7)
+
+<pre class="prettyprint" id="java">
+ 	<path id="class.test">
+       <fileset dir="./lib">
+           <include name="*.jar"/>
+       </fileset>
+   </path>
+ 
+   <taskdef name="junit"
+       classname="org.apache.tools.ant.taskdefs.optional.junit.JUnitTask">
+       <classpath refid="class.test"/>
+   </taskdef>
+</pre>
