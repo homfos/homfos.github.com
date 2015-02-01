@@ -1,6 +1,6 @@
 ---
 layout: default
-title: http
+title: http学习笔记
 ---
 
 #HTTP(超文本传输协议）
@@ -15,3 +15,5 @@ title: http
 - post请求有消息体，而get请求无消息体
 - post请求非idempotent,要自己处理同一个请求被重复提交的错误情况
 - 如果一个html的form没有指明method=post，默认的提交方法是get
+
+#未完待续

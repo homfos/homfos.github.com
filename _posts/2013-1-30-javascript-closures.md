@@ -1,6 +1,6 @@
 ---
 layout: default
-title: javascript
+title: javascript闭包
 ---
 #javascript简介
 - javascript是一个面向object的语言
@@ -8,9 +8,9 @@ title: javascript
 - javascript不用处理输入输出。宿主环境提供和对外交流的机制
 - javascript的function为object
 
-
+#javascript闭包
 They have to be used carefully, as what this refers to depends completely on where the function was called, rather than where it was defined.
-
+<pre class="prettyprint" id="javascript">
 var name = "The Window";
 　　var object = {
 　　　　name : "My Object",
@@ -34,30 +34,4 @@ var name = "The Window";
 　　　　}
 　　};
 　　alert(object.getNameFunc()());
-
-
-var createPet = function(name) {
-  var sex;
-  
-  return {
-    setName: function(newName) {
-      name = newName;
-    },
-    
-    getName: function() {
-      return name;
-    },
-    
-    getSex: function() {
-      return sex;
-    },
-    
-    setSex: function(newSex) {
-      if(typeof newSex == "string" && (newSex.toLowerCase() == "male" || newSex.toLowerCase() == "female")) {
-        sex = newSex;
-      }
-    }
-  }
-}
-
-var pet = createPet("Vivie");
+</pre>
