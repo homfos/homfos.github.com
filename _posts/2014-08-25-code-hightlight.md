@@ -1,9 +1,9 @@
 ---
 layout: default
-title: highlight test
+title: 代码高亮extensions
 ---
 
-Happy fun highlighting. 
+一个比较好玩的代码高亮插件liquid-extensions，其效果如下： 
 [More details](https://github.com/mojombo/jekyll/wiki/liquid-extensions)
 
 
