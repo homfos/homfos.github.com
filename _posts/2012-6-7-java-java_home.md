@@ -5,7 +5,7 @@ title: linux java安装
 #下载
 <pre class="prettyprint" id="java">
 # cd /opt/
-# wget --no-cookies --no-check-certificate --header\
+# wget --no-cookies --no-check-certificate --header \
 "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-\
 securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/7u75-b13/\
 jdk-7u75-linux-i586.tar.gz"
